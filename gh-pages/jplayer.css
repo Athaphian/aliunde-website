@@ -1,0 +1,252 @@
+.jp-audio *:focus {
+  /* Disable the browser focus highlighting. */
+  outline: none;
+}
+
+.jp-audio button::-moz-focus-inner {
+  /* Disable the browser CSS3 focus highlighting. */
+  border: 0;
+}
+
+/* ============================== GENERIC ================================= */
+
+.jp-jplayer * {
+  display: none;
+}
+
+.jp-audio, .jp-progress-bar, .jp-seek-bar, .jp-time-holder {
+  width: 300px;                 /* WAS 380 */
+}
+
+.jp-audio {
+  font-size: 16px;
+  font-family: Verdana, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.jp-interface {
+  height: 80px;
+}
+
+.jp-audio button {
+  display: block;
+  float: left;
+  overflow: hidden;
+  text-indent: -9999px;
+  border: none;
+  cursor: pointer;
+  width: 30px;                  /* WAS 40 */
+  height: 30px;                 /* WAS 40 */
+  background-size: 30px 30px;   /* WAS NOT HERE */
+}
+
+.jp-controls, .jp-volume-controls, .jp-toggles, .jp-progress-bar {
+  float: left;
+  position: relative;
+  height: 30px;                 /* WAS 40 */
+}
+
+.jp-volume-bar, .jp-progress {
+  background-color: #ddd; /* VOLUME AND PROGRESS BAR BACKGROUND */
+  cursor: pointer;
+}
+
+/* ============================== TRANSPORT ================================= */
+
+.jp-controls {
+  width: 120px;                 /* WAS 160 */
+}
+
+.jp-play {
+  background: url("icon_152.png") 0 0 no-repeat;
+}
+
+.jp-state-playing .jp-play {
+  background: url("icon_154.png") 0 0 no-repeat;
+  background-size: 30px 30px;
+}
+
+.jp-stop {
+  background: url("icon_153.png") 0 0 no-repeat;
+}
+
+.jp-previous {
+  background: url("icon_157.png") 0 0 no-repeat;
+}
+
+.jp-next {
+  background: url("icon_158.png") 0 0 no-repeat;
+}
+
+/* ============================== VOLUME ================================= */
+
+.jp-volume-controls {
+  width: 120px;                 /* WAS 140 */
+}
+
+.jp-volume-controls * {
+  position: absolute;
+}
+
+.jp-volume-max {
+  left: 90px;                   /* WAS 100 */
+}
+
+.jp-mute {
+  background: url("icon_161.png") 0 0 no-repeat;
+}
+
+.jp-state-muted .jp-mute {
+  background: url("icon_162.png") 0 0 no-repeat;
+  background-size: 30px 30px;
+}
+
+.jp-volume-max {
+  background: url("icon_159.png") 0 0 no-repeat;
+}
+
+.jp-volume-bar {
+  top: 11px;                    /* WAS 16 */
+  left: 30px;                   /* WAS 40 */
+  width: 60px;
+  height: 7px;                  /* WAS 8 */
+}
+
+.jp-volume-bar-value {
+  background-color: #009BE3;
+  width: 0;
+  height: 7px;                  /* WAS 8 */
+}
+
+/* ============================== TOGGLES ================================= */
+
+/*.jp-toggles {*/
+  /*width: 60px;                  *//* WAS 80 */
+/*}*/
+
+.jp-repeat {
+  background: url("icon_143.png") 0 0 no-repeat;
+}
+
+.jp-state-looped .jp-repeat {
+  background: url("icon_143.png") 0 0 no-repeat;
+  background-size: 30px 30px;
+}
+
+.jp-shuffle {
+  background: url("icon_144.png") 0 0 no-repeat;
+}
+
+.jp-state-shuffled .jp-shuffle {
+  background: url("icon_144.png") 0 0 no-repeat;
+  background-size: 30px 30px;
+}
+
+/* ============================== PROGRESS BAR ================================= */
+
+.jp-progress-bar {
+  height: 34px;
+}
+
+.jp-seek-bar {
+  height: 15px;
+}
+
+.jp-play-bar {
+  background-color: #009BE3;
+  width: 0;
+  height: 100%;
+}
+
+/* TIME */
+
+.jp-time-holder {
+  position: absolute;
+  top: 18px;
+  color: #666; /* FONT COLOR */
+}
+
+.jp-current-time, .jp-duration {
+  width: 60px;
+  font-size: .64em;
+  font-style: oblique;
+  display: inline;
+  cursor: default;
+}
+
+.jp-current-time {
+  float: left;
+}
+
+.jp-duration {
+  float: right;
+  text-align: right;
+}
+
+/* ============================== PLAYLIST ================================= */
+
+.jp-details .jp-title {
+  margin: 0;
+  padding: 5px 20px;
+  font-size: .72em;
+  font-weight: bold;
+}
+
+.jp-playlist ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+  font-size: .72em;
+}
+
+.jp-playlist li {
+  padding: 5px 0 4px 20px;
+  border-bottom: 1px solid #eee; /* PLAYLIST SEPARATOR */
+}
+
+.jp-playlist li div {
+  display: inline;
+}
+
+/* Note that the first-child (IE6) and last-child (IE6/7/8) selectors do not work on IE */
+div.jp-playlist li:last-child {
+  padding: 5px 0 5px 20px;
+  border-bottom: none;
+}
+
+div.jp-playlist li.jp-playlist-current {
+  list-style: square inside;
+  padding-left: 7px;
+}
+
+div.jp-playlist a {
+  color: #333;
+  text-decoration: none;
+}
+
+div.jp-playlist a:hover, div.jp-playlist a.jp-playlist-current {
+  color: #0d88c1;
+}
+
+/* ============================== NO SOLUTION ================================= */
+
+.jp-no-solution {
+  padding: 5px;
+  font-size: .8em;
+  background-color: #eee;
+  border: 2px solid #009be3;
+  color: #000;
+  display: none;
+}
+
+.jp-no-solution a {
+  color: #000;
+}
+
+.jp-no-solution span {
+  font-size: 1em;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+

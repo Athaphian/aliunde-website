@@ -1,1 +1,112 @@
-This is just another test inside gh-pages.
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aliunde.org</title>
+
+  <style media="screen">
+    @import url("style.css");
+  </style>
+
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.jplayer.min.js"></script>
+  <script type="text/javascript" src="jplayer.playlist.min.js"></script>
+  <script type="text/javascript" src="jpp.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.player').jplayer();
+
+      $('.player').bind($.jPlayer.event.play, function(event) {
+        console.log('play', event);
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+<header>
+  <img class="logo" src="Aliunde_Logo_Big.png">
+</header>
+
+<div class="album">
+  <img class="album-cover" src="AlbumCover_DSharp.png">
+
+  <h2>D# (2017)</h2>
+
+  <div id="d-sharp" class="player">
+    <ul>
+      <li data-src="aliunde_dsharp_2017/01_intro_wavescape.mp3" data-duration="4:04">01. Intro/Wavescape</li>
+      <li data-src="aliunde_dsharp_2017/02_u-413.mp3" data-duration="3:31">02. U-413</li>
+      <li data-src="aliunde_dsharp_2017/03_d_sharp.mp3" data-duration="3:37">03. D#</li>
+      <li data-src="aliunde_dsharp_2017/04_stairway_to_the_sun.mp3" data-duration="6:28">04. Stairway To The Sun</li>
+      <li data-src="aliunde_dsharp_2017/05_journey_alpha.mp3" data-duration="2:16">05. Journey Alpha</li>
+      <li data-src="aliunde_dsharp_2017/06_filtroid.mp3" data-duration="5:22">06. Filtroid</li>
+      <li data-src="aliunde_dsharp_2017/07_space_one.mp3" data-duration="4:07">07. Space One</li>
+      <li data-src="aliunde_dsharp_2017/08_digital_noise.mp3" data-duration="1:10">08. Digital Noise</li>
+      <li data-src="aliunde_dsharp_2017/09_ph1.mp3" data-duration="5:40">09. PH1</li>
+      <li data-src="aliunde_dsharp_2017/10_hidden.mp3" data-duration="1:12">10. Hidden</li>
+      <li data-src="aliunde_dsharp_2017/11_volatile_memory.mp3" data-duration="2:13">11. Volatile Memory</li>
+      <li data-src="aliunde_dsharp_2017/12_swing.mp3" data-duration="4:04">12. Swing</li>
+      <li data-src="aliunde_dsharp_2017/13_herald.mp3" data-duration="4:29">13. Herald</li>
+      <li data-src="aliunde_dsharp_2017/14_discovery.mp3" data-duration="4:52">14. Discovery</li>
+    </ul>
+  </div>
+</div>
+
+<div class="album">
+  <img class="album-cover" src="AlbumCover_ElectronicallyProduced.png">
+
+  <h2>Electronically Produced (2008)</h2>
+
+  <div id="electronically-produced" class="player">
+    <ul>
+      <li data-src="aliunde_electronically_produced_2008/01_isolation.mp3" data-duration="3:22">01. Isolation</li>
+      <li data-src="aliunde_electronically_produced_2008/02_accoustic_gain.mp3" data-duration="1:35">02. Acoustic Gain</li>
+      <li data-src="aliunde_electronically_produced_2008/03_explorer.mp3" data-duration="2:19">03. Explorer</li>
+      <li data-src="aliunde_electronically_produced_2008/04_orbital_666.mp3" data-duration="3:07">04. Orbital 666</li>
+      <li data-src="aliunde_electronically_produced_2008/05_atlanta_semi_live.mp3" data-duration="2:51">05. Atlanta (Semi-Live)</li>
+      <li data-src="aliunde_electronically_produced_2008/06_minimum_darkness.mp3" data-duration="1:43">06. Minimum Darkness</li>
+      <li data-src="aliunde_electronically_produced_2008/07_shadows_of_freedom.mp3" data-duration="3:32">07. Shadows Of Freedom</li>
+      <li data-src="aliunde_electronically_produced_2008/08_digital_march.mp3" data-duration="2:00">08. Digital March</li>
+      <li data-src="aliunde_electronically_produced_2008/09_unwanted_war.mp3" data-duration="1:40">09. Unwanted War</li>
+    </ul>
+  </div>
+</div>
+
+<div class="album">
+  <img class="album-cover" src="AlbumCover_ShortSongs.png">
+
+  <h2>Short Songs (2004)</h2>
+
+  <div id="short-songs" class="player">
+    <ul>
+      <li data-src="aliunde_short_songs_2004/01_life_is_an_illusion.mp3" data-duration="1:07">01. Life Is An Illusion</li>
+      <li data-src="aliunde_short_songs_2004/02_atlanta.mp3" data-duration="0:40">02. Atlanta</li>
+      <li data-src="aliunde_short_songs_2004/03_disappear_in_every_way_dij_cover.mp3" data-duration="0:50">03. Disappear In Every Way (DIJ)</li>
+      <li data-src="aliunde_short_songs_2004/04_the_dark_is_coming.mp3" data-duration="0:40">04. The Dark Is Coming</li>
+      <li data-src="aliunde_short_songs_2004/05_arons_army.mp3" data-duration="0:44">05. Aron's Army</li>
+      <li data-src="aliunde_short_songs_2004/06_the_short_song_30sec.mp3" data-duration="0:33">06. The Short Song (30sec)</li>
+      <li data-src="aliunde_short_songs_2004/07_lone_rider.mp3" data-duration="1:00">07. Lone Rider</li>
+      <li data-src="aliunde_short_songs_2004/08_search_for_the_warning.mp3" data-duration="1:19">08. Search For The Warning</li>
+      <li data-src="aliunde_short_songs_2004/09_dark_jungle.mp3" data-duration="3:16">09. Dark Jungle</li>
+      <li data-src="aliunde_short_songs_2004/10_early_spring.mp3" data-duration="0:43">10. Early Spring</li>
+      <li data-src="aliunde_short_songs_2004/11_forgotten.mp3" data-duration="1:18">11. Forgotten</li>
+      <li data-src="aliunde_short_songs_2004/12_remember.mp3" data-duration="1:06">12. Remember</li>
+    </ul>
+  </div>
+</div>
+
+<center>Copyright &copy; 2004-2019, Aliunde</center>
+
+<br />
+
+<!--
+<center>
+  <a href="http://www.reliablecounter.com" target="_blank"><img src="http://www.reliablecounter.com/count.php?page=aliunde.org&digit=style/plain/3/&reloads=0" alt="www.reliablecounter.com" title="www.reliablecounter.com" border="0"></a>
+</center>
+-->
+
+</body>
+
+</html>
