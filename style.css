@@ -2,22 +2,26 @@ body {
   background-color: #ECECEC;
   font-size: 10px;
   font-family: verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-header {
-  text-align: center;
+.logo, .album {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 720px;
+  margin-bottom: 100px;
 }
 
 .logo {
   margin-top: 40px;
-  margin-bottom: 100px;
+
 }
 
 .album {
-  width: 962px;
   height: 400px;
   overflow: hidden;
-  margin: 0 auto 100px;
 }
 
 .album img {
